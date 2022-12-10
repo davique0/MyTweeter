@@ -10,7 +10,6 @@ textarea {
 }
 
 .btn-tweet {
-  font-family: 'Bungee', cursive, sans-serif;
   color: white;
   background-color: rgb(240, 96, 96);
   /* border: none; */
@@ -22,7 +21,16 @@ section {
   align-items: center;
 }
 
-section div {
+form {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form div {
+  font-family: 'Bungee', cursive, sans-serif;
+  display: flex;
+  width: 900px;
   justify-content: space-between;
+  margin-top: 10px;
 }

@@ -1,0 +1,28 @@
+input,
+textarea {
+  width: 900px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(242, 235, 191);
+  border-style: none;
+  border-bottom: 2px solid rgb(92, 75, 81);
+}
+
+.btn-tweet {
+  font-family: 'Bungee', cursive, sans-serif;
+  color: white;
+  background-color: rgb(240, 96, 96);
+  /* border: none; */
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section div {
+  display: flex;
+  justify-content: space-between;
+}

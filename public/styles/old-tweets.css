@@ -1,0 +1,53 @@
+article {
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  margin-top: 8rem;
+}
+
+.old-tweeters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.face-avatar {
+  border-radius: 50%;
+  width: 6rem;
+}
+
+.old-tweeters > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.old-tweeters span {
+  margin-left: 1rem;
+}
+
+.light-handler {
+  color: rgba(92, 75, 81, 0.3);
+  font-weight: 600;
+}
+
+article section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 2px solid black;
+}
+
+article footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.fa-solid:hover {
+  color: rgb(240, 96, 96);
+}
+
+article:hover {
+  box-shadow: 10px 10px 10px rgba(243, 181, 98, .4);}

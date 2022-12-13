@@ -12,7 +12,7 @@
 
 /* Header */
 
-header {
+body>header {
   height: 520px;
   width: 100%;
   padding-top: 130px;

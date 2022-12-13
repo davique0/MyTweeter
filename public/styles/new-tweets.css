@@ -1,6 +1,6 @@
 input,
 textarea {
-  width: 900px;
+  width: 70vw;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -12,7 +12,6 @@ textarea {
 .btn-tweet {
   color: white;
   background-color: rgb(240, 96, 96);
-  /* border: none; */
 }
 
 section {
@@ -30,7 +29,7 @@ form {
 form div {
   font-family: 'Bungee', cursive, sans-serif;
   display: flex;
-  width: 900px;
+  width: 70vw;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 1rem;
 }

@@ -3,6 +3,8 @@ article {
   flex-direction: column;
   width: 70vw;
   margin-top: 8rem;
+  border: .15rem solid rgba(92, 75, 81, 0.8);
+  padding: .5rem;
 }
 
 .old-tweeters {

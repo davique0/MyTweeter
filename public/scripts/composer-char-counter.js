@@ -1,7 +1,6 @@
 $(document).ready(function(){
   $('#tweet-text').on('input', function() {
     let numChar = 140 - this.value.length;
-    // console.log($(this).parent().find('.counter'))
     const counter = $(this).parent().find('.counter')
     counter.text(numChar)
     if (numChar > 0) {

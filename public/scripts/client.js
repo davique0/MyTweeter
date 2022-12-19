@@ -48,7 +48,7 @@ $(document).ready(function() {
       return b.created_at - a.created_at;
     }).map((x) => createTweetElement(x));
 
-    $('#tweets-container').prepend(postTweet);
+    $('#tweets-container').html(postTweet);
   };
 
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
     })
       .then(loadTweets)
       .then($('#tweet-text').val(null))
-      .then($('output').text('140'))
+      .then($('#tweet-text').parent().find('.counter').text('140'))
       
     
   });

@@ -1,12 +1,13 @@
 nav {
   background-color: rgb(140, 190, 178);
   color: rgb(240, 96, 96);
-  height: 120px;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   width: 100%;
+  top: 0px;
 }
 
 .nav-text {

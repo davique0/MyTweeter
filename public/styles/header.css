@@ -1,9 +1,9 @@
 /* Header */
 
-body>header {
-  height: 520px;
+body>section>header {
+  height: 400px;
   width: 100%;
-  padding-top: 130px;
+  /* padding-top: 130px; */
   /* background-color: rgb(242, 235, 191); */
   background-color: #f3b562;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");

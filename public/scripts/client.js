@@ -10,8 +10,8 @@ $(document).ready(function() {
     const rdmAvatar = Math.floor(Math.random() * 8 + 1);
     const userName = data.user.name;
     const userHandle = data.user.handle;
-    const userTweet = data.content.text
-    const escape = function (str) {
+    const userTweet = data.content.text;
+    const escape = function(str) {
       let div = document.createElement("div");
       div.appendChild(document.createTextNode(str));
       return div.innerHTML;
@@ -57,15 +57,15 @@ $(document).ready(function() {
     e.preventDefault();
     const data = $(this).serialize();
     if (data.length <= 5) {
-      $('.error').slideDown(600).text(`⚠️ Let's add something to your tweet before submiting`)
+      $('.error').slideDown(600).text(`⚠️ Let's add something to your tweet before submiting`);
       return;
     }
     if (data.length > 145) {
-      $('.error').slideDown(500).text(`⚠️ Maybe that's too much info let's try with less characters`)
+      $('.error').slideDown(500).text(`⚠️ Maybe that's too much info let's try with less characters`);
       return;
     }
     if (data.length > 5 && data.length <= 145) {
-    $('.error').slideUp(300);
+      $('.error').slideUp(300);
     }
 
     $.ajax({
@@ -75,7 +75,7 @@ $(document).ready(function() {
     })
       .then(loadTweets)
       .then($('#tweet-text').val(null))
-      .then($('#tweet-text').parent().find('.counter').text('140'))
+      .then($('#tweet-text').parent().find('.counter').text('140'));
       
     
   });

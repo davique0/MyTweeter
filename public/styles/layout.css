@@ -65,8 +65,5 @@ main.container {
   .profile {
     width: 40%;
     margin: 0 40px 40px 40px;
-    /* position: absolute;
-    top: 10px;
-    left: 10px; */
   }
 }

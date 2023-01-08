@@ -55,23 +55,23 @@ $(document).ready(function() {
   // POST request to server
   $('form').submit(function(e) {
     e.preventDefault();
-    const data = $(this).serialize();
-    if (data.length <= 5) {
+    const data = $('#tweet-text').val()
+    if (data.length <= 0) {
       $('.error').slideDown(600).text(`⚠️ Let's add something to your tweet before submiting`);
       return;
     }
-    if (data.length > 145) {
+    if (data.length > 140) {
       $('.error').slideDown(500).text(`⚠️ Maybe that's too much info let's try with less characters`);
       return;
     }
-    if (data.length > 5 && data.length <= 145) {
+    if (data.length > 0 && data.length <= 140) {
       $('.error').slideUp(300);
     }
 
     $.ajax({
       url: 'http://localhost:8080/tweets',
       method: 'POST',
-      data: data
+      data: $(this).serialize()
     })
       .then(loadTweets)
       .then($('#tweet-text').val(null))

@@ -1,6 +1,6 @@
 input,
 textarea {
-  width: 70vw;
+  width: 100%;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -13,23 +13,14 @@ textarea {
   color: white;
   background-color: rgb(240, 96, 96);
 }
-
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  margin-top: 2rem;
 }
 
 form div {
   font-family: 'Bungee', cursive, sans-serif;
   display: flex;
-  width: 70vw;
+  width: 100%;
   justify-content: space-between;
   margin-top: 1rem;
 }

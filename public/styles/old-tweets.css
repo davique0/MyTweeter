@@ -1,8 +1,13 @@
+#tweets-container {
+  width: 100%;
+}
+
+
 article {
   display: flex;
   flex-direction: column;
-  width: 70vw;
-  margin-top: 8rem;
+  width: 100%;
+  margin-top: 2rem;
   border: .15rem solid rgba(92, 75, 81, 0.8);
   padding: .5rem;
 }

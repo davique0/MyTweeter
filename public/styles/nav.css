@@ -1,5 +1,7 @@
 nav {
-  background-color: rgb(140, 190, 178);
+  /* background-color: rgb(140, 190, 178); */
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  background-color: #f3b562;
   color: rgb(240, 96, 96);
   height: 120px;
   display: flex;
@@ -31,4 +33,10 @@ nav div {
 
 .fa-solid {
   color: rgb(92, 75, 81);
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: rgb(140, 190, 178);
+  }
 }
